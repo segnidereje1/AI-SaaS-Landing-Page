@@ -24,7 +24,7 @@ export default function Features(){
                 <div className="p-3 bg-primary/10 rounded-lg text-primary"><Icon /></div>
                 <div>
                   <div className="font-semibold">{it.title}</div>
-                  <div className="text-sm text-slate-500">Powerful, reliable and configurable.</div>
+                  <div className="text-sm text-slate-500">Powerful, reliable, and configurable.</div>
                 </div>
               </div>
             </motion.div>
