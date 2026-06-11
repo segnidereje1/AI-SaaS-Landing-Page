@@ -29,7 +29,7 @@ export default function Hero(){
 
           <FloatingCard className="-top-6 left-6" delay={0.4}>
             <div className="text-sm font-semibold">AI Insights</div>
-            <div className="text-xs text-slate-500">Realtime anomaly detection</div>
+            <div className="text-xs text-slate-500">Realtime anomaly  detection</div>
           </FloatingCard>
 
           <FloatingCard className="-bottom-6 right-6" delay={0.6}>
