@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-page: #f7f9ff;
+  --bg-page-alt: #eef3ff;
+  --panel: rgba(255, 255, 255, 0.72);
+  --panel-strong: rgba(255, 255, 255, 0.88);
+  --panel-border: rgba(148, 163, 184, 0.24);
+  --text-strong: #0f172a;
+  --text-soft: #475569;
+  --shadow-soft: 0 24px 80px rgba(15, 23, 42, 0.12);
+}
+
+.dark {
+  --bg-page: #050816;
+  --bg-page-alt: #0b1020;
+  --panel: rgba(9, 13, 30, 0.72);
+  --panel-strong: rgba(9, 13, 30, 0.9);
+  --panel-border: rgba(148, 163, 184, 0.14);
+  --text-strong: #f8fafc;
+  --text-soft: #94a3b8;
+  --shadow-soft: 0 28px 90px rgba(0, 0, 0, 0.34);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background: var(--bg-page);
+  color: var(--text-strong);
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  transition: background-color 300ms ease, color 300ms ease;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+::selection {
+  background: rgba(124, 92, 255, 0.28);
+}
+
+.glass {
+  background: var(--panel);
+  border: 1px solid var(--panel-border);
+  box-shadow: var(--shadow-soft);
+  backdrop-filter: blur(22px);
+}
+
+.glass-strong {
+  background: var(--panel-strong);
+  border: 1px solid var(--panel-border);
+  box-shadow: var(--shadow-soft);
+  backdrop-filter: blur(24px);
+}
+
+.noise {
+  background-image:
+    radial-gradient(circle at 20% 20%, rgba(255, 255, 255, 0.12) 0, transparent 18%),
+    radial-gradient(circle at 80% 30%, rgba(255, 255, 255, 0.08) 0, transparent 14%),
+    radial-gradient(circle at 50% 80%, rgba(255, 255, 255, 0.06) 0, transparent 16%);
+}
+
+.section-label {
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.gradient-text {
+  background: linear-gradient(90deg, #8b5cf6 0%, #22d3ee 45%, #ffffff 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.skeleton {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(90deg, rgba(148, 163, 184, 0.14) 25%, rgba(148, 163, 184, 0.32) 37%, rgba(148, 163, 184, 0.14) 63%);
+  background-size: 400% 100%;
+  animation: shimmer 1.6s infinite linear;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: 100% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
