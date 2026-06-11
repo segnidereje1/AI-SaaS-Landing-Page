@@ -18,7 +18,7 @@ export default function DashboardPreview(){
         <div className="lg:col-span-2 glass rounded-xl p-6">
           <div className="flex items-center justify-between mb-4">
             <div className="font-semibold">Overview</div>
-            <div className="text-sm text-slate-500">Updated 2m  ago </div>
+            <div className="text-sm text-slate-500">Updated  2m  ago </div>
           </div>
           <div className="h-40 bg-gradient-to-br from-primary/10 to-cyan-50 rounded-md" />
           <div className="grid grid-cols-3 gap-4 mt-4">
