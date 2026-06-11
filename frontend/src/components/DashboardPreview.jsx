@@ -13,7 +13,7 @@ function StatCard({label, value}){
 export default function DashboardPreview(){
   return (
     <section className="py-12">
-      <h3 className="text-2xl font-semibold mb-6">Interactive Dashboard Preview</h3>
+      <h3 className="text-2xl font-semibold mb-6">Interactive  Dashboard  Preview</h3>
       <motion.div initial={{opacity:0,y:10}} whileInView={{opacity:1,y:0}} className="grid grid-cols-1 lg:grid-cols-3 gap-6">
         <div className="lg:col-span-2 glass rounded-xl p-6">
           <div className="flex items-center justify-between mb-4">
