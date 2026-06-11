@@ -1,6 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-import { FiArrowRight, FiPlayCircle, FiShield, FiSparkles, FiTrendingUp } from 'react-icons/fi'
+import { FiArrowRight, FiPlayCircle, FiShield, FiTrendingUp, FiZap } from 'react-icons/fi'
 import FloatingCard from './FloatingCard'
 
 function MiniStat({ label, value }) {
@@ -25,7 +25,7 @@ export default function Hero() {
             transition={{ duration: 0.55 }}
             className="inline-flex items-center gap-2 rounded-full border border-primary-500/20 bg-primary-500/10 px-4 py-2 text-xs font-medium text-primary-700 dark:text-primary-200"
           >
-            <FiSparkles />
+            <FiZap />
             Next-gen AI automation for modern teams
           </motion.div>
 
@@ -139,7 +139,7 @@ export default function Hero() {
           <FloatingCard className="-left-4 top-6 w-56 sm:-left-10" delay={0.35}>
             <div className="flex items-center gap-3">
               <div className="flex h-10 w-10 items-center justify-center rounded-2xl bg-cyan-500/15 text-cyan-500">
-                <FiSparkles />
+                <FiZap />
               </div>
               <div>
                 <div className="text-sm font-semibold text-slate-950 dark:text-white">AI Insights</div>
