@@ -145,12 +145,6 @@ export const faqs = [
   },
 ]
 
-export const heroPills = [
-  'Private beta access',
-  'Editorial visual system',
-  'Built for luxury brands and modern teams',
-]
-
 export const serviceStats = [
   { label: 'Response time', value: '12m' },
   { label: 'Launch readiness', value: '98%' },
@@ -171,4 +165,3 @@ export const timelineNotes = [
     text: 'Track the important movement without drowning the screen in noise or clutter.',
   },
 ]
-

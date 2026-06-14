@@ -1,6 +1,5 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-import { FiArrowRight } from 'react-icons/fi'
 
 export default function CTA() {
   return (
@@ -22,13 +21,6 @@ export default function CTA() {
               Aurelia gives your landing page the same level of polish that your customers expect from the product itself.
             </p>
           </div>
-          <a
-            href="#pricing"
-            className="inline-flex items-center justify-center gap-2 rounded-full bg-gold-300 px-6 py-3 text-sm font-semibold text-[#050816] transition-transform hover:-translate-y-0.5"
-          >
-            Request access
-            <FiArrowRight />
-          </a>
         </div>
       </motion.div>
     </section>

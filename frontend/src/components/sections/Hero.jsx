@@ -1,8 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-import { FiArrowRight, FiPlayCircle, FiZap } from 'react-icons/fi'
-import { heroPills, serviceStats } from '../../data/siteContent'
-import FloatingCard from '../shared/FloatingCard'
+import { serviceStats } from '../../data/siteContent'
 
 function MiniStat({ label, value }) {
   return (
@@ -18,15 +16,6 @@ export default function Hero() {
     <section id="home" className="relative scroll-mt-28 py-16 sm:py-20 lg:py-24">
       <div className="grid items-center gap-12 lg:grid-cols-[1.02fr_0.98fr]">
         <div>
-          <motion.div
-            initial={{ opacity: 0, y: 12 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.55 }}
-            className="inline-flex items-center gap-2 rounded-full border border-gold-300/20 bg-gold-300/10 px-4 py-2 text-xs font-medium text-gold-100"
-          >
-            Private release for select teams
-          </motion.div>
-
           <motion.h1
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
@@ -46,41 +35,6 @@ export default function Hero() {
             Aurelia pairs editorial visuals with powerful orchestration, so your product feels polished, calm, and built for
             high-trust decision making.
           </motion.p>
-
-          <motion.div
-            initial={{ opacity: 0, y: 16 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.18, duration: 0.6 }}
-            className="mt-8 flex flex-col gap-4 sm:flex-row"
-          >
-            <a
-              href="#pricing"
-              className="inline-flex items-center justify-center gap-2 rounded-full bg-gold-300 px-6 py-3 text-sm font-semibold text-[#050816] shadow-glow transition-transform duration-300 hover:-translate-y-0.5"
-            >
-              Request access
-              <FiArrowRight />
-            </a>
-            <a
-              href="#experience"
-              className="inline-flex items-center justify-center gap-2 rounded-full border border-white/10 bg-white/5 px-6 py-3 text-sm font-semibold text-cream transition-transform duration-300 hover:-translate-y-0.5"
-            >
-              <FiPlayCircle />
-              Explore the experience
-            </a>
-          </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0, y: 16 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.24, duration: 0.6 }}
-            className="mt-8 flex flex-wrap gap-3"
-          >
-            {heroPills.map((pill) => (
-              <div key={pill} className="glass rounded-full px-4 py-2 text-sm text-soft">
-                {pill}
-              </div>
-            ))}
-          </motion.div>
         </div>
 
         <div className="relative">
@@ -138,32 +92,13 @@ export default function Hero() {
                   <div className="theme-panel rounded-[1.35rem] p-4">
                     <div className="text-xs uppercase tracking-[0.2em] text-soft">Revenue pulse</div>
                     <div className="mt-2 text-sm leading-6 text-cream">
-                      The latest campaign is pacing 18% ahead of last month with cleaner handoffs.
+                      The latest campaign is pacing 18% ahead of last month with cleaner team coordination.
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </motion.div>
-
-          <FloatingCard className="-left-4 top-8 w-60 sm:-left-10" delay={0.35}>
-            <div className="flex items-center gap-3">
-              <div className="flex h-10 w-10 items-center justify-center rounded-2xl bg-gold-300/15 text-gold-200">
-                <FiZap />
-              </div>
-              <div>
-                <div className="text-sm font-semibold text-cream">Signal clarity</div>
-                <div className="text-xs text-soft">Intentional alerts and calm visibility</div>
-              </div>
-            </div>
-          </FloatingCard>
-
-          <FloatingCard className="-bottom-5 right-2 w-64 sm:-right-10" delay={0.5}>
-            <div className="text-xs uppercase tracking-[0.22em] text-soft">Workflow tone</div>
-            <div className="mt-2 text-sm font-semibold text-cream">
-              Less noise, more confidence, and a distinctly premium feel.
-            </div>
-          </FloatingCard>
         </div>
       </div>
     </section>

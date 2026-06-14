@@ -31,18 +31,6 @@ export default function Navbar() {
         </div>
 
         <div className="hidden items-center gap-3 md:flex">
-          <a
-            href="#pricing"
-            className="rounded-full border border-white/10 px-4 py-2 text-sm font-medium text-cream transition-transform hover:-translate-y-0.5"
-          >
-            Request Demo
-          </a>
-          <a
-            href="#pricing"
-            className="rounded-full bg-gold-300 px-4 py-2 text-sm font-semibold text-[#050816] transition-transform hover:-translate-y-0.5"
-          >
-            Get Access
-          </a>
         </div>
 
         <div className="flex items-center gap-2 md:hidden">
@@ -70,12 +58,6 @@ export default function Navbar() {
                 {link.label}
               </a>
             ))}
-            <a
-              href="#pricing"
-              className="mt-1 rounded-2xl bg-gold-300 px-4 py-3 text-center text-sm font-semibold text-[#050816]"
-            >
-              Get Access
-            </a>
           </div>
         </div>
       ) : null}
