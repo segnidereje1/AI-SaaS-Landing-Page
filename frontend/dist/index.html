@@ -20,10 +20,14 @@
         const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches
         const isDark = stored ? stored === 'dark' : prefersDark
         document.documentElement.classList.toggle('dark', isDark)
+        const themeColor = document.querySelector('meta[name="theme-color"]')
+        if (themeColor) {
+          themeColor.setAttribute('content', isDark ? '#050816' : '#f6f1e7')
+        }
       })()
     </script>
-    <script type="module" crossorigin src="/assets/index-CcUGMHnR.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-R6f_l9q9.css">
+    <script type="module" crossorigin src="/assets/index-CwN7bRKC.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-D3oxn0-J.css">
   </head>
   <body>
     <div id="root"></div>

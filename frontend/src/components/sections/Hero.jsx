@@ -1,6 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-import { FiArrowRight, FiPlayCircle } from 'react-icons/fi'
+import { FiArrowRight, FiPlayCircle, FiZap } from 'react-icons/fi'
 import { heroPills, serviceStats } from '../../data/siteContent'
 import FloatingCard from '../shared/FloatingCard'
 
@@ -89,16 +89,16 @@ export default function Hero() {
             initial={{ opacity: 0, scale: 0.96, y: 18 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
             transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
-            className="relative overflow-hidden rounded-[2rem] border border-white/10 bg-[linear-gradient(180deg,rgba(11,16,32,0.98),rgba(5,8,22,0.92))] p-4 shadow-luxury"
+            className="theme-hero-panel theme-panel relative overflow-hidden rounded-[2rem] p-4"
           >
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(255,255,255,0.08),transparent_38%)]" />
-            <div className="relative rounded-[1.5rem] border border-white/10 bg-white/[0.03] p-4 backdrop-blur-xl">
-              <div className="flex items-center justify-between border-b border-white/8 pb-4">
+            <div className="theme-surface relative rounded-[1.5rem] border border-white/10 p-4 backdrop-blur-xl">
+              <div className="theme-border flex items-center justify-between border-b pb-4">
                 <div>
                   <div className="text-xs uppercase tracking-[0.24em] text-gold-200">Live studio</div>
                   <div className="mt-1 text-lg font-semibold text-cream">Aurelia command suite</div>
                 </div>
-                <div className="rounded-full border border-emerald-500/20 bg-emerald-500/10 px-3 py-1 text-xs font-medium text-emerald-300">
+                <div className="rounded-full border border-emerald-500/20 bg-emerald-500/10 px-3 py-1 text-xs font-medium text-emerald-300 dark:text-emerald-300">
                   Active
                 </div>
               </div>
@@ -110,12 +110,12 @@ export default function Hero() {
               </div>
 
               <div className="mt-4 grid gap-4 lg:grid-cols-[1.2fr_0.8fr]">
-                <div className="rounded-[1.5rem] border border-white/8 bg-[linear-gradient(180deg,rgba(194,145,29,0.12),rgba(255,255,255,0.02))] p-4">
+                <div className="theme-accent-panel theme-panel rounded-[1.5rem] p-4">
                   <div className="flex items-center justify-between">
                     <div className="text-sm text-soft">Executive rhythm</div>
                     <div className="text-xs text-soft">Updated moments ago</div>
                   </div>
-                  <div className="mt-4 grid h-48 grid-cols-12 items-end gap-2 rounded-[1.25rem] bg-white/[0.03] p-4">
+                  <div className="theme-surface mt-4 grid h-48 grid-cols-12 items-end gap-2 rounded-[1.25rem] p-4">
                     {[36, 58, 44, 70, 52, 82, 64, 88, 76, 92, 74, 98].map((height, index) => (
                       <motion.div
                         key={height}
@@ -129,13 +129,13 @@ export default function Hero() {
                 </div>
 
                 <div className="space-y-3">
-                  <div className="rounded-[1.35rem] border border-white/8 bg-white/[0.04] p-4">
+                  <div className="theme-panel rounded-[1.35rem] p-4">
                     <div className="text-xs uppercase tracking-[0.2em] text-soft">Priority briefing</div>
                     <div className="mt-2 text-sm leading-6 text-cream">
                       14 approvals moved from inbox chaos into a single elegant review lane.
                     </div>
                   </div>
-                  <div className="rounded-[1.35rem] border border-white/8 bg-white/[0.04] p-4">
+                  <div className="theme-panel rounded-[1.35rem] p-4">
                     <div className="text-xs uppercase tracking-[0.2em] text-soft">Revenue pulse</div>
                     <div className="mt-2 text-sm leading-6 text-cream">
                       The latest campaign is pacing 18% ahead of last month with cleaner handoffs.
@@ -169,4 +169,3 @@ export default function Hero() {
     </section>
   )
 }
-

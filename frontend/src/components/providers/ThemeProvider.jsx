@@ -18,6 +18,10 @@ export function ThemeProvider({ children }) {
     const root = document.documentElement
     root.classList.toggle('dark', mode === 'dark')
     root.style.colorScheme = mode
+    const themeColor = document.querySelector('meta[name="theme-color"]')
+    if (themeColor) {
+      themeColor.setAttribute('content', mode === 'dark' ? '#050816' : '#f6f1e7')
+    }
     window.localStorage.setItem('theme', mode)
   }, [mode])
 
@@ -32,4 +36,3 @@ export function ThemeProvider({ children }) {
 
   return <ThemeContext.Provider value={value}>{children}</ThemeContext.Provider>
 }
-

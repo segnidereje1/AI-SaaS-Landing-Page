@@ -20,6 +20,10 @@
         const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches
         const isDark = stored ? stored === 'dark' : prefersDark
         document.documentElement.classList.toggle('dark', isDark)
+        const themeColor = document.querySelector('meta[name="theme-color"]')
+        if (themeColor) {
+          themeColor.setAttribute('content', isDark ? '#050816' : '#f6f1e7')
+        }
       })()
     </script>
   </head>

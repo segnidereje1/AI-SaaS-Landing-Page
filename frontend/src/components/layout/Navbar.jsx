@@ -8,7 +8,7 @@ export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false)
 
   return (
-    <header className="sticky top-0 z-50 border-b border-white/10 bg-[#050816]/70 backdrop-blur-2xl">
+    <header className="theme-surface theme-border sticky top-0 z-50 border-b backdrop-blur-2xl">
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
         <a href="#home" className="flex items-center gap-3">
           <div className="flex h-11 w-11 items-center justify-center rounded-2xl border border-gold-300/20 bg-[linear-gradient(135deg,rgba(194,145,29,0.22),rgba(255,248,232,0.08))] text-sm font-bold text-cream shadow-glow">
@@ -76,7 +76,7 @@ export default function Navbar() {
       </nav>
 
       {menuOpen ? (
-        <div className="border-t border-white/10 bg-[#050816]/95 px-4 py-4 backdrop-blur-2xl md:hidden">
+        <div className="theme-surface-strong theme-border border-t px-4 py-4 backdrop-blur-2xl md:hidden">
           <div className="mx-auto flex max-w-7xl flex-col gap-3">
             {navLinks.map((link) => (
               <a
@@ -100,4 +100,3 @@ export default function Navbar() {
     </header>
   )
 }
-

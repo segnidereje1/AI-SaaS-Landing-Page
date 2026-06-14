@@ -12,7 +12,7 @@ const resourceLinks = ['Docs', 'Blog', 'Support', 'Changelog']
 
 export default function Footer() {
   return (
-    <footer className="border-t border-white/10 bg-[#050816]/80 px-4 py-10 backdrop-blur-2xl sm:px-6 lg:px-8">
+    <footer className="theme-surface theme-border border-t px-4 py-10 backdrop-blur-2xl sm:px-6 lg:px-8">
       <div className="mx-auto grid max-w-7xl gap-10 md:grid-cols-[1.3fr_0.7fr_0.7fr]">
         <div>
           <div className="flex items-center gap-3">
@@ -52,7 +52,7 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="mx-auto mt-10 flex max-w-7xl flex-col gap-4 border-t border-white/10 pt-6 text-sm text-soft sm:flex-row sm:items-center sm:justify-between">
+      <div className="theme-border mx-auto mt-10 flex max-w-7xl flex-col gap-4 border-t pt-6 text-sm text-soft sm:flex-row sm:items-center sm:justify-between">
         <p>Copyright {new Date().getFullYear()} Aurelia. All rights reserved.</p>
         <div className="flex items-center gap-4 text-lg">
           <a href="#" aria-label="GitHub">
@@ -69,4 +69,3 @@ export default function Footer() {
     </footer>
   )
 }
-

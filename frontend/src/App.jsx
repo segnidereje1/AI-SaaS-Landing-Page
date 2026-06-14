@@ -15,7 +15,7 @@ import CTA from './components/sections/CTA'
 
 export default function App() {
   return (
-    <div className="relative min-h-screen overflow-hidden bg-[radial-gradient(circle_at_top,_rgba(194,145,29,0.2),_transparent_26%),radial-gradient(circle_at_80%_10%,_rgba(95,71,188,0.16),_transparent_30%),linear-gradient(180deg,_#050816_0%,_#0b1020_42%,_#060913_100%)] text-cream transition-colors duration-300">
+    <div className="theme-page relative min-h-screen overflow-hidden transition-colors duration-300">
       <div className="pointer-events-none fixed inset-0 opacity-80">
         <div className="absolute left-[-6rem] top-[-10rem] h-80 w-80 rounded-full bg-gold-400/12 blur-3xl animate-drift" />
         <div className="absolute right-[-8rem] top-[16rem] h-96 w-96 rounded-full bg-fuchsia-500/10 blur-3xl animate-drift [animation-delay:1.4s]" />
