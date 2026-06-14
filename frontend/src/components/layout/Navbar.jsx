@@ -1,10 +1,8 @@
-import React, { useContext, useState } from 'react'
-import { ThemeContext } from '../providers/ThemeProvider'
+import React, { useState } from 'react'
 import { navLinks } from '../../data/siteContent'
-import { FiMenu, FiMoon, FiSun, FiX } from 'react-icons/fi'
+import { FiMenu, FiX } from 'react-icons/fi'
 
 export default function Navbar() {
-  const { mode, toggleMode } = useContext(ThemeContext)
   const [menuOpen, setMenuOpen] = useState(false)
 
   return (
@@ -33,14 +31,6 @@ export default function Navbar() {
         </div>
 
         <div className="hidden items-center gap-3 md:flex">
-          <button
-            type="button"
-            aria-label="Toggle theme"
-            onClick={toggleMode}
-            className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/5 text-cream transition-transform hover:-translate-y-0.5"
-          >
-            {mode === 'dark' ? <FiSun /> : <FiMoon />}
-          </button>
           <a
             href="#pricing"
             className="rounded-full border border-white/10 px-4 py-2 text-sm font-medium text-cream transition-transform hover:-translate-y-0.5"
@@ -56,14 +46,6 @@ export default function Navbar() {
         </div>
 
         <div className="flex items-center gap-2 md:hidden">
-          <button
-            type="button"
-            aria-label="Toggle theme"
-            onClick={toggleMode}
-            className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-white/10 bg-white/5 text-cream"
-          >
-            {mode === 'dark' ? <FiSun /> : <FiMoon />}
-          </button>
           <button
             type="button"
             aria-label="Open menu"
