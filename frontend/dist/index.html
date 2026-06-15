@@ -16,18 +16,15 @@
     />
     <script>
       (() => {
-        const stored = window.localStorage.getItem('theme')
-        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches
-        const isDark = stored ? stored === 'dark' : prefersDark
-        document.documentElement.classList.toggle('dark', isDark)
+        document.documentElement.classList.add('dark')
         const themeColor = document.querySelector('meta[name="theme-color"]')
         if (themeColor) {
-          themeColor.setAttribute('content', isDark ? '#050816' : '#f6f1e7')
+          themeColor.setAttribute('content', '#050816')
         }
       })()
     </script>
-    <script type="module" crossorigin src="/assets/index-CwN7bRKC.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-D3oxn0-J.css">
+    <script type="module" crossorigin src="/assets/index-BsosqkA4.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-C99NSyDw.css">
   </head>
   <body>
     <div id="root"></div>

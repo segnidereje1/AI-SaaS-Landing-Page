@@ -15,29 +15,34 @@ export default function Showcase() {
         >
           <div className="flex flex-wrap items-center justify-between gap-4">
             <div>
-              <div className="section-label text-xs text-gold-200/90">Command center</div>
-              <h3 className="mt-3 text-3xl font-semibold text-cream">A composed overview of the business pulse.</h3>
+              <div className="section-label text-xs text-gold-200/90">Command deck</div>
+              <h3 className="mt-3 max-w-xl text-2xl font-semibold leading-tight text-cream sm:text-3xl">
+                A clear view of the business pulse.
+              </h3>
             </div>
             <div className="inline-flex items-center gap-2 rounded-full border border-emerald-500/20 bg-emerald-500/10 px-3 py-2 text-xs font-medium text-emerald-300">
               <FiClock />
-              Live for leadership
+              Live
             </div>
           </div>
 
           <div className="mt-8 grid gap-4 md:grid-cols-2">
             {showcaseHighlights.map((item) => (
-              <div key={item} className="rounded-[1.4rem] border border-white/10 bg-white/[0.04] p-4 text-sm text-soft">
+              <div
+                key={item}
+                className="rounded-[1.25rem] border border-white/10 bg-white/[0.04] px-4 py-4 text-sm text-soft"
+              >
                 {item}
               </div>
             ))}
           </div>
 
-          <div className="mt-8 grid gap-4 xl:grid-cols-[1.1fr_0.9fr]">
+          <div className="mt-8 grid gap-4 xl:grid-cols-[1.05fr_0.95fr]">
             <div className="rounded-[1.6rem] border border-white/10 bg-[linear-gradient(180deg,rgba(194,145,29,0.12),rgba(255,255,255,0.02))] p-5">
               <div className="flex items-center justify-between">
                 <div>
-                  <div className="text-xs uppercase tracking-[0.2em] text-soft">Weekly board</div>
-                  <div className="mt-1 text-xl font-semibold text-cream">Momentum without the clutter.</div>
+                  <div className="text-[0.65rem] uppercase tracking-[0.24em] text-soft">Weekly pulse</div>
+                  <div className="mt-1 text-lg font-semibold text-cream">Clear trends, fast.</div>
                 </div>
                 <FiArrowUpRight className="text-gold-200" />
               </div>
@@ -53,15 +58,15 @@ export default function Showcase() {
               </div>
             </div>
 
-            <div className="space-y-4">
+            <div className="space-y-3">
               <div className="rounded-[1.4rem] border border-white/10 bg-white/[0.04] p-4">
                 <div className="flex items-center gap-3">
                   <div className="flex h-10 w-10 items-center justify-center rounded-2xl bg-gold-300/10 text-gold-200">
                     <FiCalendar />
                   </div>
                   <div>
-                    <div className="text-sm font-semibold text-cream">Meeting-ready summaries</div>
-                    <div className="text-sm text-soft">Everything distilled for quick executive review.</div>
+                    <div className="text-sm font-semibold text-cream">Ready for review</div>
+                    <div className="text-sm text-soft">Short, executive-ready.</div>
                   </div>
                 </div>
               </div>
@@ -71,8 +76,8 @@ export default function Showcase() {
                     <FiHeart />
                   </div>
                   <div>
-                    <div className="text-sm font-semibold text-cream">Client sentiment</div>
-                    <div className="text-sm text-soft">Spot patterns before they become issues.</div>
+                    <div className="text-sm font-semibold text-cream">Client signals</div>
+                    <div className="text-sm text-soft">Catch issues early.</div>
                   </div>
                 </div>
               </div>
@@ -86,17 +91,19 @@ export default function Showcase() {
           viewport={{ once: true, amount: 0.25 }}
           className="glass rounded-[2rem] p-6 sm:p-8"
         >
-          <div className="section-label text-xs text-gold-200/90">Editorial rhythm</div>
-          <h3 className="mt-3 text-3xl font-semibold text-cream">Designed to look like a premium briefing.</h3>
-          <div className="mt-6 space-y-4">
+          <div className="section-label text-xs text-gold-200/90">Editorial flow</div>
+          <h3 className="mt-3 max-w-sm text-2xl font-semibold leading-tight text-cream sm:text-3xl">
+            A concise briefing, styled cleanly.
+          </h3>
+          <div className="mt-6 space-y-3">
             {timelineNotes.map((item, index) => (
-              <div key={item.title} className="rounded-[1.4rem] border border-white/10 bg-white/[0.04] p-4">
+              <div key={item.title} className="rounded-[1.25rem] border border-white/10 bg-white/[0.04] p-4">
                 <div className="flex items-start gap-4">
                   <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-2xl bg-gold-300/10 text-sm font-semibold text-gold-200">
                     0{index + 1}
                   </div>
                   <div>
-                    <div className="text-lg font-semibold text-cream">{item.title}</div>
+                    <div className="text-base font-semibold text-cream">{item.title}</div>
                     <p className="mt-1 text-sm leading-6 text-soft">{item.text}</p>
                   </div>
                 </div>
@@ -108,4 +115,3 @@ export default function Showcase() {
     </section>
   )
 }
-

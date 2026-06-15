@@ -43,10 +43,10 @@ export const featureCards = [
 ]
 
 export const showcaseHighlights = [
-  'Personalized activity briefings',
-  'Executive-ready analytics snapshots',
-  'Workflow orchestration with approval layers',
-  'Live visibility into what matters most',
+  'Personalized briefings',
+  'Fast analytics snapshots',
+  'Approval-aware workflows',
+  'Live visibility',
 ]
 
 export const metrics = [
@@ -151,15 +151,15 @@ export const serviceStats = [
 
 export const timelineNotes = [
   {
-    title: 'Daily briefing',
-    text: 'Summaries are condensed into a refined morning view for leadership and operators.',
+    title: 'Morning brief',
+    text: 'A quick view for leaders.',
   },
   {
-    title: 'Decision lane',
-    text: 'High-impact requests are routed into a crisp approval path instead of a crowded inbox.',
+    title: 'Approval lane',
+    text: 'Route key requests fast.',
   },
   {
-    title: 'Revenue pulse',
-    text: 'Track the important movement without drowning the screen in noise or clutter.',
+    title: 'Revenue watch',
+    text: 'Track movement without noise.',
   },
 ]
