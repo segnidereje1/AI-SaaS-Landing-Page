@@ -2,9 +2,9 @@ import React from 'react'
 import { FiGithub, FiLinkedin, FiTwitter } from 'react-icons/fi'
 
 const productLinks = [
-  { label: 'Experience', href: '#experience' },
-  { label: 'Capabilities', href: '#capabilities' },
-  { label: 'Results', href: '#results' },
+  { label: 'Work', href: '#experience' },
+  { label: 'Flow', href: '#capabilities' },
+  { label: 'Proof', href: '#results' },
   { label: 'Pricing', href: '#pricing' },
 ]
 
