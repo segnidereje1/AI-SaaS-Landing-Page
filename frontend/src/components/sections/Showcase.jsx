@@ -15,9 +15,9 @@ export default function Showcase() {
         >
           <div className="flex flex-wrap items-center justify-between gap-4">
             <div>
-              <div className="section-label text-xs text-gold-200/90">Command deck</div>
+              <div className="section-label text-xs text-gold-200/90">Command</div>
               <h3 className="mt-3 max-w-xl text-2xl font-semibold leading-tight text-cream sm:text-3xl">
-                A clear view of the business pulse.
+                A clear view of what matters.
               </h3>
             </div>
             <div className="inline-flex items-center gap-2 rounded-full border border-emerald-500/20 bg-emerald-500/10 px-3 py-2 text-xs font-medium text-emerald-300">
@@ -41,7 +41,7 @@ export default function Showcase() {
             <div className="rounded-[1.6rem] border border-white/10 bg-[linear-gradient(180deg,rgba(194,145,29,0.12),rgba(255,255,255,0.02))] p-5">
               <div className="flex items-center justify-between">
                 <div>
-                  <div className="text-[0.65rem] uppercase tracking-[0.24em] text-soft">Weekly pulse</div>
+                  <div className="text-[0.65rem] uppercase tracking-[0.24em] text-soft">Weekly</div>
                   <div className="mt-1 text-lg font-semibold text-cream">Clear trends, fast.</div>
                 </div>
                 <FiArrowUpRight className="text-gold-200" />
@@ -66,7 +66,7 @@ export default function Showcase() {
                   </div>
                   <div>
                     <div className="text-sm font-semibold text-cream">Ready for review</div>
-                    <div className="text-sm text-soft">Short, executive-ready.</div>
+                    <div className="text-sm text-soft">Short and ready.</div>
                   </div>
                 </div>
               </div>
@@ -77,7 +77,7 @@ export default function Showcase() {
                   </div>
                   <div>
                     <div className="text-sm font-semibold text-cream">Client signals</div>
-                    <div className="text-sm text-soft">Catch issues early.</div>
+                    <div className="text-sm text-soft">Catch issues sooner.</div>
                   </div>
                 </div>
               </div>
@@ -91,9 +91,9 @@ export default function Showcase() {
           viewport={{ once: true, amount: 0.25 }}
           className="glass rounded-[2rem] p-6 sm:p-8"
         >
-          <div className="section-label text-xs text-gold-200/90">Editorial flow</div>
+          <div className="section-label text-xs text-gold-200/90">Editorial</div>
           <h3 className="mt-3 max-w-sm text-2xl font-semibold leading-tight text-cream sm:text-3xl">
-            A concise briefing, styled cleanly.
+            Short notes. Clean flow.
           </h3>
           <div className="mt-6 space-y-3">
             {timelineNotes.map((item, index) => (

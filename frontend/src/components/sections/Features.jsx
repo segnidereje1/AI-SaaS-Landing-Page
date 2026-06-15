@@ -8,8 +8,8 @@ export default function Features() {
     <section id="experience" className="scroll-mt-28 py-16 sm:py-20">
       <SectionHeading
         eyebrow="Capabilities"
-        title="A feature set composed like a luxury product, not a template."
-        description="Every interaction is designed to feel intentional: calm hierarchy, generous spacing, and enough visual richness to feel premium without becoming busy."
+        title="A compact feature set with a calmer feel."
+        description="Simple hierarchy. More breathing room. Less noise."
       />
 
       <div className="mt-10 grid gap-5 sm:grid-cols-2 xl:grid-cols-3">
@@ -23,14 +23,14 @@ export default function Features() {
               viewport={{ once: true, amount: 0.25 }}
               transition={{ delay: index * 0.08, duration: 0.55 }}
               whileHover={{ y: -6 }}
-              className="glass group rounded-[1.75rem] p-6 transition-all duration-300 hover:border-gold-300/25"
+              className="glass group rounded-[1.75rem] p-5 transition-all duration-300 hover:border-gold-300/25"
             >
               <div className="flex items-start gap-4">
                 <div className="rounded-2xl bg-gold-300/10 p-3 text-gold-200 transition-transform duration-300 group-hover:scale-110">
                   <Icon size={22} />
                 </div>
                 <div>
-                  <h3 className="text-2xl font-semibold text-cream">{item.title}</h3>
+                  <h3 className="text-xl font-semibold text-cream">{item.title}</h3>
                   <p className="mt-2 text-sm leading-6 text-soft">{item.desc}</p>
                 </div>
               </div>
@@ -41,4 +41,3 @@ export default function Features() {
     </section>
   )
 }
-

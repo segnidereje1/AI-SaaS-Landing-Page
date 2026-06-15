@@ -21,11 +21,11 @@ export default function Footer() {
             </div>
             <div>
               <div className="text-lg font-semibold text-cream">Aurelia</div>
-              <div className="text-xs text-soft">Luxury AI experience</div>
+              <div className="text-xs text-soft">AI studio</div>
             </div>
           </div>
           <p className="mt-4 max-w-md text-sm leading-7 text-soft">
-            A premium landing page for refined AI products, designed to feel editorial, composed, and unmistakably elevated.
+            A refined landing page for modern AI products.
           </p>
         </div>
 
@@ -41,7 +41,7 @@ export default function Footer() {
         </div>
 
         <div>
-          <div className="text-sm font-semibold uppercase tracking-[0.22em] text-soft">Resources</div>
+          <div className="text-sm font-semibold uppercase tracking-[0.22em] text-soft">Links</div>
           <ul className="mt-4 space-y-3 text-sm text-soft">
             {resourceLinks.map((link) => (
               <li key={link}>
@@ -53,7 +53,7 @@ export default function Footer() {
       </div>
 
       <div className="theme-border mx-auto mt-10 flex max-w-7xl flex-col gap-4 border-t pt-6 text-sm text-soft sm:flex-row sm:items-center sm:justify-between">
-        <p>Copyright {new Date().getFullYear()} Aurelia. All rights reserved.</p>
+        <p>© {new Date().getFullYear()} Aurelia.</p>
         <div className="flex items-center gap-4 text-lg">
           <a href="#" aria-label="GitHub">
             <FiGithub />

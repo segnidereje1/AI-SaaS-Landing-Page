@@ -14,7 +14,7 @@ export default function Navbar() {
           </div>
           <div>
             <div className="text-base font-semibold tracking-tight text-cream">Aurelia</div>
-            <div className="text-xs text-soft">Luxury AI studio</div>
+            <div className="text-xs text-soft">AI studio</div>
           </div>
         </a>
 
@@ -30,8 +30,7 @@ export default function Navbar() {
           ))}
         </div>
 
-        <div className="hidden items-center gap-3 md:flex">
-        </div>
+        <div className="hidden items-center gap-3 md:flex" />
 
         <div className="flex items-center gap-2 md:hidden">
           <button

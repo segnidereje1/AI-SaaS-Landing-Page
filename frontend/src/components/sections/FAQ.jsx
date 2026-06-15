@@ -9,8 +9,8 @@ export default function FAQ() {
       <SectionHeading
         eyebrow="FAQ"
         align="center"
-        title="A few practical questions, answered with the same clarity as the design."
-        description="If you’re refining the product experience or adapting the structure, this section keeps the answers short and credible."
+        title="Quick answers."
+        description="Short, direct, and useful."
         className="mx-auto max-w-3xl"
       />
 
@@ -24,14 +24,13 @@ export default function FAQ() {
             transition={{ delay: index * 0.05, duration: 0.45 }}
             className="glass group rounded-[1.4rem] p-5"
           >
-            <summary className="cursor-pointer list-none text-lg font-semibold text-cream [&::-webkit-details-marker]:hidden">
+            <summary className="cursor-pointer list-none text-base font-semibold text-cream [&::-webkit-details-marker]:hidden">
               {item.question}
             </summary>
-            <p className="mt-3 max-w-3xl text-sm leading-7 text-soft">{item.answer}</p>
+            <p className="mt-3 max-w-3xl text-sm leading-6 text-soft">{item.answer}</p>
           </motion.details>
         ))}
       </div>
     </section>
   )
 }
-
