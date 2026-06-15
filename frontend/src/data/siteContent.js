@@ -9,8 +9,6 @@ export const navLinks = [
   { label: 'FAQ', href: '#faq' },
 ]
 
-export const trustedPartners = ['Northstar', 'Maison', 'Luma', 'Verve', 'Monarch', 'Atelier']
-
 export const featureCards = [
   {
     title: 'Bespoke automation flows',

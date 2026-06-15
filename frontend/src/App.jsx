@@ -3,7 +3,6 @@ import { motion } from 'framer-motion'
 import Navbar from './components/layout/Navbar'
 import Footer from './components/layout/Footer'
 import Hero from './components/sections/Hero'
-import Trusted from './components/sections/Trusted'
 import Features from './components/sections/Features'
 import Showcase from './components/sections/Showcase'
 import Metrics from './components/sections/Metrics'
@@ -31,7 +30,6 @@ export default function App() {
         className="relative mx-auto flex w-full max-w-7xl flex-col px-4 pb-20 pt-3 sm:px-6 lg:px-8"
       >
         <Hero />
-        <Trusted />
         <Features />
         <Showcase />
         <Metrics />
