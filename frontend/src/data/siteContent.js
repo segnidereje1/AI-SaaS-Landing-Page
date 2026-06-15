@@ -1,9 +1,9 @@
 import { FiBarChart2, FiCpu, FiFeather, FiLayers, FiShield, FiUsers } from 'react-icons/fi'
 
 export const navLinks = [
-  { label: 'Experience', href: '#experience' },
-  { label: 'Capabilities', href: '#capabilities' },
-  { label: 'Results', href: '#results' },
+  { label: 'Work', href: '#experience' },
+  { label: 'Flow', href: '#capabilities' },
+  { label: 'Proof', href: '#results' },
   { label: 'Process', href: '#process' },
   { label: 'Pricing', href: '#pricing' },
   { label: 'FAQ', href: '#faq' },
@@ -11,84 +11,81 @@ export const navLinks = [
 
 export const featureCards = [
   {
-    title: 'Bespoke automation flows',
-    desc: "Craft concierge-grade workflows that remove repetitive work without losing your team's signature touch.",
+    title: 'Automation',
+    desc: 'Clean workflows that remove repeat work.',
     icon: FiLayers,
   },
   {
-    title: 'Tasteful AI writing',
-    desc: 'Generate polished copy, proposals, and product narratives that sound considered, not generic.',
+    title: 'Writing',
+    desc: 'Sharper copy without the filler.',
     icon: FiFeather,
   },
   {
-    title: 'Real-time command center',
-    desc: 'See live performance, high-priority alerts, and revenue signals in a calm, elegant interface.',
+    title: 'Live view',
+    desc: 'Key signals in one calm place.',
     icon: FiBarChart2,
   },
   {
-    title: 'Secure by design',
-    desc: 'Enterprise-ready guardrails, role controls, and review paths that keep sensitive work protected.',
+    title: 'Secure',
+    desc: 'Controls built in from day one.',
     icon: FiShield,
   },
   {
-    title: 'Team orchestration',
-    desc: 'Hand off work across departments with context-rich collaboration and perfectly timed nudges.',
+    title: 'Team flow',
+    desc: 'Hand-offs that stay in sync.',
     icon: FiUsers,
   },
   {
-    title: 'Fast integration layer',
-    desc: 'Connect your stack with lightweight APIs and workflows that feel native to your tools.',
+    title: 'Integrations',
+    desc: 'Easy links to the tools you use.',
     icon: FiCpu,
   },
 ]
 
 export const showcaseHighlights = [
-  'Personalized briefings',
-  'Fast analytics snapshots',
-  'Approval-aware workflows',
-  'Live visibility',
+  'Briefings',
+  'Snapshots',
+  'Approvals',
+  'Live view',
 ]
 
 export const metrics = [
-  { label: 'Operational time saved', value: 84, suffix: '%', note: 'Across weekly admin tasks' },
+  { label: 'Time saved', value: 84, suffix: '%', note: 'Across weekly tasks' },
   { label: 'Faster approvals', value: 3.2, suffix: 'x', note: 'From request to sign-off' },
-  { label: 'Client retention lift', value: 27, suffix: '%', note: 'Driven by faster response loops' },
-  { label: 'Workflows launched', value: 1200, suffix: '+', note: 'Across teams and departments' },
+  { label: 'Retention lift', value: 27, suffix: '%', note: 'From quicker responses' },
+  { label: 'Workflows live', value: 1200, suffix: '+', note: 'Across teams' },
 ]
 
 export const processSteps = [
   {
-    title: 'Curate the brief',
-    text: 'Define the experience you want, the teams involved, and the moments that deserve automation.',
+    title: 'Brief',
+    text: 'Define the outcome and scope.',
   },
   {
-    title: 'Shape the flow',
-    text: 'Design elegant pathways for approvals, insights, and alerts so the product feels calm and precise.',
+    title: 'Shape',
+    text: 'Map approvals and alerts.',
   },
   {
-    title: 'Scale the rhythm',
-    text: 'Roll it out across the organization with confident controls, analytics, and a premium rollout plan.',
+    title: 'Scale',
+    text: 'Launch it with clarity.',
   },
 ]
 
 export const testimonials = [
   {
-    quote:
-      'The interface feels like something you would expect from a design studio, but the operations depth is what actually changed how our team works.',
+    quote: 'Looks premium. Works hard.',
     name: 'Maya Laurent',
-    role: 'VP of Operations',
+    role: 'Ops Lead',
     company: 'Maison North',
   },
   {
-    quote:
-      'We replaced three disconnected tools with one beautifully composed system. The result is clearer decisions and a much calmer team.',
+    quote: 'One clean system replaced three tools.',
     name: 'Jordan Ellis',
-    role: 'Chief Product Officer',
+    role: 'Product Lead',
     company: 'Monarch Labs',
   },
   {
-    quote:
-      'Our client updates, approvals, and internal reports now feel intentionally crafted instead of stitched together at the last minute.',
+    quote: 'Updates and approvals finally feel smooth.',
     name: 'Ari Chen',
     role: 'Founder',
     company: 'Atelier Studio',
@@ -100,66 +97,62 @@ export const pricingPlans = [
     name: 'Private',
     monthly: 39,
     yearly: 390,
-    description: 'For solo operators who want a polished edge and a serious workflow advantage.',
-    features: ['3 premium workflows', 'Basic analytics', 'Email support', 'Theme customization'],
+    description: 'For solo operators.',
+    features: ['3 workflows', 'Basic analytics', 'Email support', 'Theme tweaks'],
   },
   {
     name: 'Signature',
     monthly: 79,
     yearly: 790,
-    description: 'For teams that want premium orchestration and a striking command center.',
-    features: ['Unlimited workflows', 'Advanced analytics', 'Collaboration tools', 'Priority support', 'API access'],
+    description: 'For growing teams.',
+    features: ['Unlimited workflows', 'Analytics', 'Collaboration', 'Priority support', 'API access'],
     popular: true,
   },
   {
     name: 'Atelier',
     monthly: 149,
     yearly: 1490,
-    description: 'For organizations that need bespoke control, scale, and white-glove implementation.',
-    features: ['SSO and roles', 'Custom SLAs', 'Dedicated support', 'Security reviews', 'Private deployment'],
+    description: 'For larger orgs.',
+    features: ['SSO', 'Custom SLAs', 'Dedicated support', 'Security reviews', 'Private deployment'],
   },
 ]
 
 export const faqs = [
   {
-    question: 'Can we use this with our existing stack?',
-    answer:
-      'Yes. The layout is designed to feel premium while still fitting naturally into modern web tooling, APIs, and team workflows.',
+    question: 'Works with our stack?',
+    answer: 'Yes. It fits modern tooling and APIs.',
   },
   {
-    question: 'Is this suitable for enterprise teams?',
-    answer:
-      'Absolutely. The visual language is luxurious, but the system is built to communicate trust, clarity, and control at scale.',
+    question: 'Good for enterprise?',
+    answer: 'Yes. It keeps things clear and controlled.',
   },
   {
-    question: 'Can we adapt the colors and brand easily?',
-    answer:
-      'Yes. The styling is centralized so you can swap the palette, copy, and section order without having to unravel the page.',
+    question: 'Easy to brand?',
+    answer: 'Yes. Colors and copy are easy to swap.',
   },
   {
-    question: 'What makes the design feel more premium?',
-    answer:
-      'We leaned on editorial typography, restrained gold accents, glassy surfaces, and spacious composition instead of loud gradients.',
+    question: 'What makes it premium?',
+    answer: 'Editorial type, soft gold, and space.',
   },
 ]
 
 export const serviceStats = [
-  { label: 'Response time', value: '12m' },
-  { label: 'Launch readiness', value: '98%' },
-  { label: 'Clarity score', value: 'A+' },
+  { label: 'Response', value: '12m' },
+  { label: 'Ready', value: '98%' },
+  { label: 'Clarity', value: 'A+' },
 ]
 
 export const timelineNotes = [
   {
-    title: 'Morning brief',
+    title: 'Brief',
     text: 'A quick view for leaders.',
   },
   {
-    title: 'Approval lane',
+    title: 'Approvals',
     text: 'Route key requests fast.',
   },
   {
-    title: 'Revenue watch',
+    title: 'Revenue',
     text: 'Track movement without noise.',
   },
 ]
