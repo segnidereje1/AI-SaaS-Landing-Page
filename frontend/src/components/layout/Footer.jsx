@@ -53,7 +53,7 @@ export default function Footer() {
       </div>
 
       <div className="theme-border mx-auto mt-10 flex max-w-7xl flex-col gap-4 border-t pt-6 text-sm text-soft sm:flex-row sm:items-center sm:justify-between">
-        <p>© {new Date().getFullYear()} Aurelia.</p>
+        <p>Copyright {new Date().getFullYear()} Aurelia.</p>
         <div className="flex items-center gap-4 text-lg">
           <a href="#" aria-label="GitHub">
             <FiGithub />
