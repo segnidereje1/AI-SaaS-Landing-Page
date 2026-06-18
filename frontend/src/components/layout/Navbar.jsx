@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { AnimatePresence, motion } from 'framer-motion'
 import { navLinks } from '../../data/siteContent'
 import { FiMenu, FiX } from 'react-icons/fi'
 
@@ -44,22 +45,30 @@ export default function Navbar() {
         </div>
       </nav>
 
-      {menuOpen ? (
-        <div className="theme-surface-strong theme-border border-t px-4 py-4 backdrop-blur-2xl md:hidden">
-          <div className="mx-auto flex max-w-7xl flex-col gap-3">
-            {navLinks.map((link) => (
-              <a
-                key={link.label}
-                href={link.href}
-                onClick={() => setMenuOpen(false)}
-                className="rounded-2xl border border-white/5 bg-white/5 px-4 py-3 text-sm font-medium text-cream"
-              >
-                {link.label}
-              </a>
-            ))}
-          </div>
-        </div>
-      ) : null}
+      <AnimatePresence initial={false}>
+        {menuOpen ? (
+          <motion.div
+            initial={{ opacity: 0, y: -8, height: 0 }}
+            animate={{ opacity: 1, y: 0, height: 'auto' }}
+            exit={{ opacity: 0, y: -8, height: 0 }}
+            transition={{ duration: 0.22, ease: [0.22, 1, 0.36, 1] }}
+            className="theme-surface-strong theme-border overflow-hidden border-t px-4 backdrop-blur-2xl md:hidden"
+          >
+            <div className="mx-auto flex max-w-7xl flex-col gap-3 py-4">
+              {navLinks.map((link) => (
+                <a
+                  key={link.label}
+                  href={link.href}
+                  onClick={() => setMenuOpen(false)}
+                  className="rounded-2xl border border-white/5 bg-white/5 px-4 py-3 text-sm font-medium text-cream transition-colors duration-200 hover:bg-white/10"
+                >
+                  {link.label}
+                </a>
+              ))}
+            </div>
+          </motion.div>
+        ) : null}
+      </AnimatePresence>
     </header>
   )
 }

@@ -1,7 +1,7 @@
 import React from 'react'
-import { motion } from 'framer-motion'
 import { featureCards } from '../../data/siteContent'
 import SectionHeading from '../shared/SectionHeading'
+import Reveal from '../shared/Reveal'
 
 export default function Features() {
   return (
@@ -16,16 +16,12 @@ export default function Features() {
         {featureCards.map((item, index) => {
           const Icon = item.icon
           return (
-            <motion.article
+            <Reveal
               key={item.title}
-              initial={{ opacity: 0, y: 18 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, amount: 0.25 }}
-              transition={{ delay: index * 0.08, duration: 0.55 }}
-              whileHover={{ y: -6 }}
-              className="glass group rounded-[1.75rem] p-5 transition-all duration-300 hover:border-gold-300/25"
+              delay={index * 0.06}
+              className="glass group rounded-[1.75rem] p-5 transition-all duration-300 hover:-translate-y-1 hover:border-gold-300/25"
             >
-              <div className="flex items-start gap-4">
+              <article className="flex items-start gap-4">
                 <div className="rounded-2xl bg-gold-300/10 p-3 text-gold-200 transition-transform duration-300 group-hover:scale-110">
                   <Icon size={22} />
                 </div>
@@ -33,8 +29,8 @@ export default function Features() {
                   <h3 className="text-xl font-semibold text-cream">{item.title}</h3>
                   <p className="mt-2 text-sm leading-6 text-soft">{item.desc}</p>
                 </div>
-              </div>
-            </motion.article>
+              </article>
+            </Reveal>
           )
         })}
       </div>

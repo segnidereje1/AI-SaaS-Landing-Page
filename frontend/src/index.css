@@ -36,11 +36,13 @@ html.dark {
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 7rem;
 }
 
 body {
   margin: 0;
   min-width: 320px;
+  overflow-x: hidden;
   background:
     radial-gradient(circle at top, var(--page-accent), transparent 28%),
     linear-gradient(180deg, var(--page) 0%, var(--page-alt) 100%);
@@ -191,4 +193,19 @@ a {
   background: linear-gradient(90deg, rgba(255, 255, 255, 0.03) 25%, rgba(255, 255, 255, 0.12) 37%, rgba(255, 255, 255, 0.03) 63%);
   background-size: 400% 100%;
   animation: shimmer 1.6s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
