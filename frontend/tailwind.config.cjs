@@ -11,7 +11,7 @@ module.exports = {
         glow: '0 0 0 1px rgba(194, 145, 29, 0.12), 0 24px 70px rgba(194, 145, 29, 0.18)',
       },
       colors: {
-        cream: '#f5f0e8',
+        cream: '#0f172a',
         ink: {
           50: '#f8fafc',
           100: '#eef2f7',
