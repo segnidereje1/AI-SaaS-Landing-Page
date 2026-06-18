@@ -1,13 +1,10 @@
 import React from 'react'
-import { motion } from 'framer-motion'
+import Reveal from '../shared/Reveal'
 
 export default function CTA() {
   return (
     <section className="py-16 sm:py-20">
-      <motion.div
-        initial={{ opacity: 0, y: 18 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, amount: 0.2 }}
+      <Reveal
         className="theme-accent-panel theme-panel relative overflow-hidden rounded-[2rem] p-8 sm:p-10"
       >
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(255,248,232,0.16),transparent_30%),radial-gradient(circle_at_bottom_left,rgba(124,92,255,0.12),transparent_28%)]" />
@@ -22,7 +19,7 @@ export default function CTA() {
             </p>
           </div>
         </div>
-      </motion.div>
+      </Reveal>
     </section>
   )
 }
