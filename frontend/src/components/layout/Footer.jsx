@@ -2,21 +2,22 @@ import React from 'react'
 import { FiGithub, FiLinkedin, FiTwitter } from 'react-icons/fi'
 
 const productLinks = [
-  { label: 'Work', href: '#experience' },
-  { label: 'Flow', href: '#capabilities' },
-  { label: 'Proof', href: '#results' },
-  { label: 'Pricing', href: '#pricing' },
+  { label: 'Home', href: '#home' },
+  { label: 'About', href: '#results' },
+  { label: 'Services', href: '#experience' },
+  { label: 'Portfolio', href: '#capabilities' },
+  { label: 'Contact', href: '#pricing' },
 ]
 
 const resourceLinks = ['Docs', 'Blog', 'Support', 'Changelog']
 
 export default function Footer() {
   return (
-    <footer className="theme-surface theme-border border-t px-4 py-10 backdrop-blur-2xl sm:px-6 lg:px-8">
+    <footer className="border-t border-ink-200 bg-white px-4 py-10 sm:px-6 lg:px-8">
       <div className="mx-auto grid max-w-7xl gap-10 md:grid-cols-[1.3fr_0.7fr_0.7fr]">
         <div>
           <div className="flex items-center gap-3">
-            <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-[linear-gradient(135deg,rgba(194,145,29,0.24),rgba(255,248,232,0.08))] text-sm font-bold text-cream">
+            <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-[linear-gradient(135deg,rgba(194,145,29,0.24),rgba(255,248,232,0.95))] text-sm font-bold text-cream">
               Au
             </div>
             <div>
@@ -25,12 +26,26 @@ export default function Footer() {
             </div>
           </div>
           <p className="mt-4 max-w-md text-sm leading-7 text-soft">
-            A refined landing page for modern AI products.
+            We craft high-performance digital experiences that drive real business results.
           </p>
+          <div className="mt-5 flex items-center gap-4 text-lg text-soft">
+            <a href="#" aria-label="Instagram">
+              <FiGithub />
+            </a>
+            <a href="#" aria-label="Facebook">
+              <FiLinkedin />
+            </a>
+            <a href="#" aria-label="LinkedIn">
+              <FiTwitter />
+            </a>
+            <a href="#" aria-label="X">
+              <FiTwitter />
+            </a>
+          </div>
         </div>
 
         <div>
-          <div className="text-sm font-semibold uppercase tracking-[0.22em] text-soft">Product</div>
+          <div className="text-sm font-semibold uppercase tracking-[0.22em] text-soft">Quick Links</div>
           <ul className="mt-4 space-y-3 text-sm text-soft">
             {productLinks.map((link) => (
               <li key={link.label}>
@@ -41,30 +56,22 @@ export default function Footer() {
         </div>
 
         <div>
-          <div className="text-sm font-semibold uppercase tracking-[0.22em] text-soft">Links</div>
+          <div className="text-sm font-semibold uppercase tracking-[0.22em] text-soft">Services</div>
           <ul className="mt-4 space-y-3 text-sm text-soft">
             {resourceLinks.map((link) => (
               <li key={link}>
-                <a href="#">{link}</a>
+                <a href="#pricing">{link}</a>
               </li>
             ))}
           </ul>
         </div>
       </div>
 
-      <div className="theme-border mx-auto mt-10 flex max-w-7xl flex-col gap-4 border-t pt-6 text-sm text-soft sm:flex-row sm:items-center sm:justify-between">
-        <p>Copyright {new Date().getFullYear()} Aurelia.</p>
-        <div className="flex items-center gap-4 text-lg">
-          <a href="#" aria-label="GitHub">
-            <FiGithub />
-          </a>
-          <a href="#" aria-label="LinkedIn">
-            <FiLinkedin />
-          </a>
-          <a href="#" aria-label="Twitter">
-            <FiTwitter />
-          </a>
-        </div>
+      <div className="mx-auto mt-10 flex max-w-7xl flex-col gap-4 border-t border-ink-200 pt-6 text-sm text-soft sm:flex-row sm:items-center sm:justify-between">
+        <p>Copyright {new Date().getFullYear()} Aurelia All rights reserved</p>
+        <a href="#home" className="font-semibold text-gold-700">
+          Scroll to top
+        </a>
       </div>
     </footer>
   )
