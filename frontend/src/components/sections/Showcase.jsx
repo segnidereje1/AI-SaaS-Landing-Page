@@ -1,18 +1,13 @@
 import React from 'react'
-import { motion } from 'framer-motion'
 import { FiArrowUpRight, FiCalendar, FiClock, FiHeart } from 'react-icons/fi'
 import { showcaseHighlights, timelineNotes } from '../../data/siteContent'
+import Reveal from '../shared/Reveal'
 
 export default function Showcase() {
   return (
     <section id="capabilities" className="scroll-mt-28 py-16 sm:py-20">
       <div className="grid gap-6 lg:grid-cols-[1.08fr_0.92fr]">
-        <motion.div
-          initial={{ opacity: 0, y: 16 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.25 }}
-          className="glass rounded-[2rem] p-6 sm:p-8"
-        >
+        <Reveal className="glass rounded-[2rem] p-6 sm:p-8">
           <div className="flex flex-wrap items-center justify-between gap-4">
             <div>
               <div className="section-label text-xs text-gold-200/90">Command</div>
@@ -83,14 +78,9 @@ export default function Showcase() {
               </div>
             </div>
           </div>
-        </motion.div>
+        </Reveal>
 
-        <motion.div
-          initial={{ opacity: 0, y: 16 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.25 }}
-          className="glass rounded-[2rem] p-6 sm:p-8"
-        >
+        <Reveal delay={0.08} className="glass rounded-[2rem] p-6 sm:p-8">
           <div className="section-label text-xs text-gold-200/90">Editorial</div>
           <h3 className="mt-3 max-w-sm text-2xl font-semibold leading-tight text-cream sm:text-3xl">
             Short notes. Clean flow.
@@ -110,7 +100,7 @@ export default function Showcase() {
               </div>
             ))}
           </div>
-        </motion.div>
+        </Reveal>
       </div>
     </section>
   )

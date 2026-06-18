@@ -1,7 +1,7 @@
 import React from 'react'
-import { motion } from 'framer-motion'
 import { processSteps } from '../../data/siteContent'
 import SectionHeading from '../shared/SectionHeading'
+import Reveal from '../shared/Reveal'
 
 export default function Process() {
   return (
@@ -14,18 +14,17 @@ export default function Process() {
 
       <div className="mt-10 grid gap-5 lg:grid-cols-3">
         {processSteps.map((step, index) => (
-          <motion.article
+          <Reveal
             key={step.title}
-            initial={{ opacity: 0, y: 18 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.2 }}
-            transition={{ delay: index * 0.08, duration: 0.55 }}
+            delay={index * 0.06}
             className="glass rounded-[1.8rem] p-5"
           >
-            <div className="text-[0.65rem] uppercase tracking-[0.24em] text-gold-200/90">0{index + 1}</div>
-            <h3 className="mt-4 text-2xl font-semibold text-cream">{step.title}</h3>
-            <p className="mt-2 text-sm leading-6 text-soft">{step.text}</p>
-          </motion.article>
+            <article>
+              <div className="text-[0.65rem] uppercase tracking-[0.24em] text-gold-200/90">0{index + 1}</div>
+              <h3 className="mt-4 text-2xl font-semibold text-cream">{step.title}</h3>
+              <p className="mt-2 text-sm leading-6 text-soft">{step.text}</p>
+            </article>
+          </Reveal>
         ))}
       </div>
     </section>
