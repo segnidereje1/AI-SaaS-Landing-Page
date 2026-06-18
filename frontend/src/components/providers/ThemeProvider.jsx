@@ -9,18 +9,18 @@ export const ThemeContext = createContext({
 export function ThemeProvider({ children }) {
   useEffect(() => {
     const root = document.documentElement
-    root.classList.add('dark')
-    root.style.colorScheme = 'dark'
+    root.classList.remove('dark')
+    root.style.colorScheme = 'light'
     const themeColor = document.querySelector('meta[name="theme-color"]')
     if (themeColor) {
-      themeColor.setAttribute('content', '#050816')
+      themeColor.setAttribute('content', '#f6f1e7')
     }
   }, [])
 
   return (
     <ThemeContext.Provider
       value={{
-        mode: 'dark',
+        mode: 'light',
         setMode: () => {},
         toggleMode: () => {},
       }}
