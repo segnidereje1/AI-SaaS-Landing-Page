@@ -1,5 +1,5 @@
 import React from 'react'
-import { FiGithub, FiLinkedin, FiTwitter } from 'react-icons/fi'
+import { FiFacebook, FiInstagram, FiLinkedin, FiTwitter } from 'react-icons/fi'
 
 const productLinks = [
   { label: 'Home', href: '#home' },
@@ -30,13 +30,13 @@ export default function Footer() {
           </p>
           <div className="mt-5 flex items-center gap-4 text-lg text-soft">
             <a href="#" aria-label="Instagram">
-              <FiGithub />
+              <FiInstagram />
             </a>
             <a href="#" aria-label="Facebook">
-              <FiLinkedin />
+              <FiFacebook />
             </a>
             <a href="#" aria-label="LinkedIn">
-              <FiTwitter />
+              <FiLinkedin />
             </a>
             <a href="#" aria-label="X">
               <FiTwitter />
