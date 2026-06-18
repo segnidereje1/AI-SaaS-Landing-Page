@@ -1,4 +1,4 @@
-import { FiBarChart2, FiCpu, FiFeather, FiLayers, FiShield, FiUsers } from 'react-icons/fi'
+import { FiBarChart2, FiFeather, FiLayers, FiShield } from 'react-icons/fi'
 
 export const navLinks = [
   { label: 'About', href: '#results' },
