@@ -1,91 +1,101 @@
 import { FiBarChart2, FiCpu, FiFeather, FiLayers, FiShield, FiUsers } from 'react-icons/fi'
 
 export const navLinks = [
-  { label: 'Work', href: '#experience' },
-  { label: 'Flow', href: '#capabilities' },
-  { label: 'Proof', href: '#results' },
-  { label: 'Process', href: '#process' },
-  { label: 'Pricing', href: '#pricing' },
+  { label: 'About', href: '#results' },
+  { label: 'Services', href: '#experience' },
+  { label: 'Work', href: '#capabilities' },
+  { label: 'Journal', href: '#process' },
   { label: 'FAQ', href: '#faq' },
+  { label: 'Contact', href: '#pricing' },
 ]
 
 export const featureCards = [
   {
-    title: 'Automation',
-    desc: 'Clean workflows that remove repeat work.',
+    title: 'UI/UX Design',
+    desc: 'Interfaces that feel clear, modern, and easy to trust.',
     icon: FiLayers,
   },
   {
-    title: 'Writing',
-    desc: 'Sharper copy without the filler.',
+    title: 'Brand Design',
+    desc: 'Visual systems with structure, warmth, and recall.',
     icon: FiFeather,
   },
   {
-    title: 'Live view',
-    desc: 'Key signals in one calm place.',
+    title: 'Web Development',
+    desc: 'Fast, responsive builds that keep the polish intact.',
     icon: FiBarChart2,
   },
   {
-    title: 'Secure',
-    desc: 'Controls built in from day one.',
+    title: 'No-Code Delivery',
+    desc: 'Launch-friendly workflows without unnecessary complexity.',
     icon: FiShield,
-  },
-  {
-    title: 'Team flow',
-    desc: 'Hand-offs that stay in sync.',
-    icon: FiUsers,
-  },
-  {
-    title: 'Integrations',
-    desc: 'Easy links to the tools you use.',
-    icon: FiCpu,
   },
 ]
 
 export const showcaseHighlights = [
-  'Briefings',
-  'Snapshots',
-  'Approvals',
-  'Live view',
+  'Strategy',
+  'Wireframes',
+  'Brand system',
+  'Conversion',
 ]
 
 export const metrics = [
-  { label: 'Time saved', value: 84, suffix: '%', note: 'Across weekly tasks' },
-  { label: 'Faster approvals', value: 3.2, suffix: 'x', note: 'From request to sign-off' },
-  { label: 'Retention lift', value: 27, suffix: '%', note: 'From quicker responses' },
-  { label: 'Workflows live', value: 1200, suffix: '+', note: 'Across teams' },
+  { label: 'Prototype speed', value: 72, suffix: 'h', note: 'From brief to first direction' },
+  { label: 'Projects launched', value: 100, suffix: '+', note: 'Across brands and startups' },
+  { label: 'Years refining', value: 10, suffix: '+', note: 'Of design and delivery craft' },
 ]
 
 export const processSteps = [
   {
-    title: 'Brief',
-    text: 'Define the outcome and scope.',
+    title: 'How We Boosted Client Conversions 200% With Smarter UI/UX',
+    text: 'A quick look at the design choices behind clearer flows and stronger engagement.',
   },
   {
-    title: 'Shape',
-    text: 'Map approvals and alerts.',
+    title: 'Why Your Brand Colors Are Quietly Hurting Conversion',
+    text: 'Small palette changes can reshape trust, hierarchy, and the path to action.',
   },
   {
-    title: 'Scale',
-    text: 'Launch it with clarity.',
+    title: 'Webflow vs Custom Builds: What We Recommend and Why',
+    text: 'A practical guide to choosing speed, flexibility, and long-term maintainability.',
+  },
+]
+
+export const journalPosts = [
+  {
+    category: 'UI/UX Design',
+    title: 'How We Boosted Client Conversions 200% With Smarter UI/UX',
+    author: 'kalpeshb',
+    date: 'April 23, 2025',
+  },
+  {
+    category: 'Branding',
+    title: 'Why Your Logo Colors Are Driving Away Your Ideal Customers',
+    author: 'kalpeshb',
+    date: 'April 23, 2025',
+  },
+  {
+    category: 'Web Development',
+    title: 'WordPress vs Webflow - Our Developers Settle The Debate',
+    author: 'kalpeshb',
+    date: 'April 23, 2025',
   },
 ]
 
 export const testimonials = [
   {
-    quote: 'Looks premium. Works hard.',
+    quote: 'The redesign felt crisp, premium, and surprisingly easy to navigate.',
     name: 'Maya Laurent',
     role: 'Ops Lead',
     company: 'Maison North',
   },
   {
-    quote: 'One clean system replaced three tools.',
+    quote: 'We finally had a site that matched the quality of the product.',
     name: 'Jordan Ellis',
     role: 'Product Lead',
     company: 'Monarch Labs',
   },
   {
-    quote: 'Updates and approvals finally feel smooth.',
+    quote: 'The whole experience feels deliberate instead of templated.',
     name: 'Ari Chen',
     role: 'Founder',
     company: 'Atelier Studio',
