@@ -1,10 +1,12 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
 import { navLinks } from '../../data/siteContent'
-import { FiMenu, FiX, FiArrowRight } from 'react-icons/fi'
+import { FiArrowRight, FiMenu, FiMoon, FiSun, FiX } from 'react-icons/fi'
+import { ThemeContext } from '../providers/ThemeProvider'
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false)
+  const { mode, toggleMode } = useContext(ThemeContext)
 
   return (
     <header className="sticky top-0 z-50 border-b border-ink-200 bg-white/85 backdrop-blur-2xl">
@@ -42,6 +44,14 @@ export default function Navbar() {
         </div>
 
         <div className="hidden items-center gap-3 md:flex">
+          <button
+            type="button"
+            onClick={toggleMode}
+            aria-label="Toggle color theme"
+            className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-ink-200 bg-white text-cream shadow-sm transition-colors hover:bg-gold-50"
+          >
+            {mode === 'dark' ? <FiSun /> : <FiMoon />}
+          </button>
           <a
             href="#pricing"
             className="inline-flex items-center rounded-full bg-gold-300 px-5 py-3 text-sm font-semibold text-[#050816] transition-transform hover:-translate-y-0.5"
@@ -51,6 +61,14 @@ export default function Navbar() {
         </div>
 
         <div className="flex items-center gap-2 md:hidden">
+          <button
+            type="button"
+            onClick={toggleMode}
+            aria-label="Toggle color theme"
+            className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-ink-200 bg-white text-cream shadow-sm"
+          >
+            {mode === 'dark' ? <FiSun /> : <FiMoon />}
+          </button>
           <button
             type="button"
             aria-label="Open menu"
@@ -82,6 +100,14 @@ export default function Navbar() {
                   {link.label}
                 </a>
               ))}
+              <button
+                type="button"
+                onClick={toggleMode}
+                className="inline-flex items-center justify-center gap-2 rounded-2xl border border-ink-200 bg-white px-4 py-3 text-sm font-medium text-cream"
+              >
+                {mode === 'dark' ? <FiSun /> : <FiMoon />}
+                Switch to {mode === 'dark' ? 'light' : 'dark'} mode
+              </button>
             </div>
           </motion.div>
         ) : null}

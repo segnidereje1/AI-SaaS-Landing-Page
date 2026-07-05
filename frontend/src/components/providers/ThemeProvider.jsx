@@ -1,31 +1,44 @@
-import React, { createContext, useEffect } from 'react'
+import React, { createContext, useEffect, useMemo, useState } from 'react'
+
+const getInitialTheme = () => {
+  if (typeof window === 'undefined') return 'light'
+
+  const storedTheme = window.localStorage.getItem('aurelia-theme')
+  if (storedTheme === 'dark' || storedTheme === 'light') {
+    return storedTheme
+  }
+
+  return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
+}
 
 export const ThemeContext = createContext({
-  mode: 'dark',
+  mode: 'light',
   setMode: () => {},
   toggleMode: () => {},
 })
 
 export function ThemeProvider({ children }) {
+  const [mode, setMode] = useState(getInitialTheme)
+
   useEffect(() => {
     const root = document.documentElement
-    root.classList.remove('dark')
-    root.style.colorScheme = 'light'
+    const isDark = mode === 'dark'
+
+    root.classList.toggle('dark', isDark)
+    root.style.colorScheme = isDark ? 'dark' : 'light'
+    window.localStorage.setItem('aurelia-theme', mode)
+
     const themeColor = document.querySelector('meta[name="theme-color"]')
     if (themeColor) {
-      themeColor.setAttribute('content', '#f6f1e7')
+      themeColor.setAttribute('content', isDark ? '#050816' : '#f6f1e7')
     }
-  }, [])
+  }, [mode])
 
-  return (
-    <ThemeContext.Provider
-      value={{
-        mode: 'light',
-        setMode: () => {},
-        toggleMode: () => {},
-      }}
-    >
-      {children}
-    </ThemeContext.Provider>
-  )
+  const toggleMode = () => {
+    setMode((current) => (current === 'dark' ? 'light' : 'dark'))
+  }
+
+  const value = useMemo(() => ({ mode, setMode, toggleMode }), [mode])
+
+  return <ThemeContext.Provider value={value}>{children}</ThemeContext.Provider>
 }
