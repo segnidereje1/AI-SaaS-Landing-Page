@@ -17,12 +17,12 @@ const caseStudies = [
   {
     title: 'Greenify - Social Engagement',
     tags: ['Animation', 'Bold palette'],
-    accent: 'from-amber-50 to-white',
+    accent: 'from-sky-50 to-white',
   },
   {
     title: 'Quizora - No-Code MVP for EdTech',
     tags: ['Gamified', 'Stripe subscription'],
-    accent: 'from-stone-50 to-white',
+    accent: 'from-cyan-50 to-white',
   },
 ]
 
