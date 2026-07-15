@@ -44,7 +44,7 @@ export default function Showcase() {
       <div className="mt-10 grid gap-5 lg:grid-cols-2">
         {caseStudies.map((item, index) => (
           <Reveal key={item.title} delay={index * 0.06}>
-            <article className="group overflow-hidden rounded-[2rem] border border-ink-200 bg-white shadow-[0_18px_50px_rgba(15,23,42,0.08)] transition-transform duration-300 hover:-translate-y-1">
+            <article className="interactive-card group overflow-hidden rounded-[2rem] border border-ink-200 bg-white shadow-[0_18px_50px_rgba(15,23,42,0.08)] transition-transform duration-300 hover:-translate-y-1">
               <div className={`h-64 bg-gradient-to-br ${item.accent} p-6`}>
                 <div className="flex h-full flex-col justify-between rounded-[1.6rem] border border-white/80 bg-white/60 p-5 backdrop-blur-sm">
                   <div className="flex items-start justify-between gap-4">
