@@ -19,7 +19,7 @@ export default function Features() {
             <Reveal
               key={item.title}
               delay={index * 0.06}
-              className="glass group rounded-[1.75rem] p-5 transition-all duration-300 hover:-translate-y-1 hover:border-gold-300/25"
+              className="interactive-card glass group rounded-[1.75rem] p-5 transition-all duration-300 hover:-translate-y-1 hover:border-gold-300/25"
             >
               <article className="flex items-start gap-4">
                 <div className="rounded-2xl bg-gold-300/10 p-3 text-gold-200 transition-transform duration-300 group-hover:scale-110">

@@ -42,9 +42,9 @@ export default function App() {
           />
         </div>
         <div className="pointer-events-none fixed inset-0 opacity-80">
-          <div className="absolute left-[-6rem] top-[-10rem] h-80 w-80 rounded-full bg-gold-400/12 blur-3xl animate-drift" />
-          <div className="absolute right-[-8rem] top-[16rem] h-96 w-96 rounded-full bg-fuchsia-500/10 blur-3xl animate-drift [animation-delay:1.4s]" />
-          <div className="absolute bottom-[-8rem] left-[18%] h-72 w-72 rounded-full bg-cyan-400/8 blur-3xl animate-drift [animation-delay:2.1s]" />
+          <div className="aurora-ribbon aurora-ribbon-one" />
+          <div className="aurora-ribbon aurora-ribbon-two" />
+          <div className="absolute inset-x-0 top-0 h-64 bg-[linear-gradient(180deg,rgba(255,255,255,0.38),transparent)] dark:bg-[linear-gradient(180deg,rgba(255,255,255,0.05),transparent)]" />
         </div>
 
         <Navbar />
