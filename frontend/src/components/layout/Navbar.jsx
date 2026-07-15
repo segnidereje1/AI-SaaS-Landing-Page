@@ -22,7 +22,7 @@ export default function Navbar() {
 
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
         <a href="#home" className="flex items-center gap-3">
-          <div className="flex h-11 w-11 items-center justify-center rounded-2xl border border-gold-300/30 bg-[linear-gradient(135deg,rgba(194,145,29,0.2),rgba(255,248,232,0.9))] text-sm font-bold text-cream shadow-[0_15px_35px_rgba(194,145,29,0.12)]">
+          <div className="flex h-11 w-11 items-center justify-center rounded-2xl border border-gold-300/30 bg-[linear-gradient(135deg,rgba(20,184,166,0.22),rgba(236,254,255,0.92))] text-sm font-bold text-cream shadow-[0_15px_35px_rgba(14,165,233,0.14)]">
             Au
           </div>
           <div>

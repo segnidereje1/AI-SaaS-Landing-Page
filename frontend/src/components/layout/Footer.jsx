@@ -17,7 +17,7 @@ export default function Footer() {
       <div className="mx-auto grid max-w-7xl gap-10 md:grid-cols-[1.3fr_0.7fr_0.7fr]">
         <div>
           <div className="flex items-center gap-3">
-            <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-[linear-gradient(135deg,rgba(194,145,29,0.24),rgba(255,248,232,0.95))] text-sm font-bold text-cream">
+            <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-[linear-gradient(135deg,rgba(20,184,166,0.26),rgba(236,254,255,0.95))] text-sm font-bold text-cream">
               Au
             </div>
             <div>
