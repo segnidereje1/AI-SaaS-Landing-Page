@@ -7,7 +7,7 @@ export default function CTA() {
       <Reveal
         className="theme-accent-panel theme-panel relative overflow-hidden rounded-[2rem] p-8 sm:p-10"
       >
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(255,248,232,0.16),transparent_30%),radial-gradient(circle_at_bottom_left,rgba(124,92,255,0.12),transparent_28%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(103,232,249,0.18),transparent_30%),radial-gradient(circle_at_bottom_left,rgba(20,184,166,0.14),transparent_28%)]" />
         <div className="relative flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
           <div className="max-w-2xl">
             <div className="section-label text-xs text-gold-100/90">Start here</div>
