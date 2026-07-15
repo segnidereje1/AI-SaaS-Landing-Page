@@ -6,10 +6,10 @@
 
 :root {
   color-scheme: light;
-  --page: #f6f1e7;
-  --page-alt: #ece5d8;
-  --page-accent: rgba(194, 145, 29, 0.14);
-  --page-accent-2: rgba(95, 71, 188, 0.08);
+  --page: #effffc;
+  --page-alt: #eaf4ff;
+  --page-accent: rgba(20, 184, 166, 0.15);
+  --page-accent-2: rgba(14, 165, 233, 0.1);
   --grid-line: rgba(15, 23, 42, 0.05);
   --panel: rgba(255, 255, 255, 0.68);
   --panel-strong: rgba(255, 255, 255, 0.84);
@@ -21,15 +21,15 @@
 
 html.dark {
   color-scheme: dark;
-  --page: #050816;
-  --page-alt: #0b1020;
-  --page-accent: rgba(194, 145, 29, 0.18);
-  --page-accent-2: rgba(95, 71, 188, 0.14);
+  --page: #031014;
+  --page-alt: #071927;
+  --page-accent: rgba(20, 184, 166, 0.2);
+  --page-accent-2: rgba(14, 165, 233, 0.16);
   --grid-line: rgba(255, 255, 255, 0.035);
   --panel: rgba(9, 13, 30, 0.68);
   --panel-strong: rgba(9, 13, 30, 0.88);
-  --panel-border: rgba(222, 176, 56, 0.14);
-  --text-strong: #f5f0e8;
+  --panel-border: rgba(103, 232, 249, 0.16);
+  --text-strong: #eefcff;
   --text-soft: #b8c0d1;
   --shadow-soft: 0 30px 90px rgba(5, 8, 22, 0.3);
 }
@@ -74,8 +74,8 @@ body::after {
   z-index: -1;
   opacity: 0.46;
   background:
-    linear-gradient(115deg, transparent 0%, rgba(194, 145, 29, 0.1) 34%, transparent 52%),
-    linear-gradient(245deg, transparent 10%, rgba(56, 189, 248, 0.08) 42%, transparent 62%);
+    linear-gradient(115deg, transparent 0%, rgba(20, 184, 166, 0.11) 34%, transparent 52%),
+    linear-gradient(245deg, transparent 10%, rgba(14, 165, 233, 0.1) 42%, transparent 62%);
   animation: atmospheric-shift 18s ease-in-out infinite alternate;
 }
 
@@ -123,13 +123,13 @@ html.dark .theme-hero-panel {
 
 .theme-accent-panel {
   background:
-    linear-gradient(135deg, rgba(194, 145, 29, 0.14), rgba(255, 248, 232, 0.4)),
+    linear-gradient(135deg, rgba(20, 184, 166, 0.14), rgba(236, 254, 255, 0.46)),
     linear-gradient(180deg, rgba(255, 255, 255, 0.86), rgba(255, 255, 255, 0.72));
 }
 
 html.dark .theme-accent-panel {
   background:
-    linear-gradient(135deg, rgba(194, 145, 29, 0.22), rgba(5, 8, 22, 0.9), rgba(255, 248, 232, 0.06));
+    linear-gradient(135deg, rgba(20, 184, 166, 0.22), rgba(5, 8, 22, 0.9), rgba(14, 165, 233, 0.08));
 }
 
 h1,
@@ -147,7 +147,7 @@ a {
 }
 
 ::selection {
-  background: rgba(194, 145, 29, 0.28);
+  background: rgba(20, 184, 166, 0.3);
 }
 
 .glass {
@@ -196,7 +196,7 @@ a {
 }
 
 .gold-gradient {
-  background: linear-gradient(90deg, #fbecc0 0%, #c2911d 44%, #fff8e8 100%);
+  background: linear-gradient(90deg, #67e8f9 0%, #14b8a6 42%, #38bdf8 100%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -225,13 +225,13 @@ html.dark .aurora-ribbon {
 
 .aurora-ribbon-one {
   top: 7rem;
-  background: linear-gradient(90deg, transparent, rgba(238, 199, 93, 0.18), rgba(56, 189, 248, 0.09), transparent);
+  background: linear-gradient(90deg, transparent, rgba(20, 184, 166, 0.2), rgba(14, 165, 233, 0.12), transparent);
   animation: ribbon-slide 16s ease-in-out infinite alternate;
 }
 
 .aurora-ribbon-two {
   top: 26rem;
-  background: linear-gradient(90deg, transparent, rgba(124, 92, 255, 0.12), rgba(194, 145, 29, 0.12), transparent);
+  background: linear-gradient(90deg, transparent, rgba(45, 212, 191, 0.14), rgba(59, 130, 246, 0.12), transparent);
   animation: ribbon-slide 20s ease-in-out infinite alternate-reverse;
 }
 
@@ -247,7 +247,7 @@ html.dark .aurora-ribbon {
   inset: 4rem 1rem 3rem;
   border-radius: 42% 58% 46% 54%;
   background:
-    linear-gradient(135deg, rgba(238, 199, 93, 0.3), rgba(56, 189, 248, 0.1), rgba(124, 92, 255, 0.15)),
+    linear-gradient(135deg, rgba(20, 184, 166, 0.32), rgba(14, 165, 233, 0.14), rgba(45, 212, 191, 0.18)),
     rgba(255, 255, 255, 0.25);
   filter: blur(18px);
   transform: translateZ(-90px) rotate(-8deg);
@@ -268,25 +268,25 @@ html.dark .aurora-ribbon {
   border-radius: 2rem;
   background:
     linear-gradient(180deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.68)),
-    linear-gradient(135deg, rgba(255, 248, 232, 0.8), rgba(248, 250, 252, 0.92));
+    linear-gradient(135deg, rgba(236, 254, 255, 0.86), rgba(248, 250, 252, 0.92));
   box-shadow:
     0 44px 90px rgba(15, 23, 42, 0.16),
-    18px 24px 0 rgba(194, 145, 29, 0.1),
+    18px 24px 0 rgba(20, 184, 166, 0.1),
     inset 0 1px 0 rgba(255, 255, 255, 0.84);
   transform: translateZ(46px);
 }
 
 html.dark .hero-device-face {
-  border-color: rgba(238, 199, 93, 0.18);
+  border-color: rgba(103, 232, 249, 0.18);
   background:
     linear-gradient(180deg, rgba(16, 24, 45, 0.94), rgba(8, 12, 28, 0.86)),
-    linear-gradient(135deg, rgba(194, 145, 29, 0.16), rgba(56, 189, 248, 0.08));
+    linear-gradient(135deg, rgba(20, 184, 166, 0.18), rgba(14, 165, 233, 0.1));
 }
 
 .hero-orbit {
   position: absolute;
   inset: 3.5rem;
-  border: 1px solid rgba(194, 145, 29, 0.28);
+  border: 1px solid rgba(20, 184, 166, 0.3);
   border-radius: 50%;
   transform-style: preserve-3d;
 }
