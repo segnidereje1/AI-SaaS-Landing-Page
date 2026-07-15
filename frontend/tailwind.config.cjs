@@ -8,7 +8,7 @@ module.exports = {
     extend: {
       boxShadow: {
         luxury: '0 30px 90px rgba(5, 8, 22, 0.34)',
-        glow: '0 0 0 1px rgba(194, 145, 29, 0.12), 0 24px 70px rgba(194, 145, 29, 0.18)',
+        glow: '0 0 0 1px rgba(20, 184, 166, 0.14), 0 24px 70px rgba(14, 165, 233, 0.2)',
       },
       colors: {
         cream: '#0f172a',
@@ -26,20 +26,20 @@ module.exports = {
           950: '#050816',
         },
         gold: {
-          50: '#fff8e8',
-          100: '#fbecc0',
-          200: '#f5d98a',
-          300: '#eec75d',
-          400: '#deb038',
-          500: '#c2911d',
-          600: '#a17417',
-          700: '#805814',
-          800: '#654312',
-          900: '#4f3410',
+          50: '#ecfeff',
+          100: '#cffafe',
+          200: '#a5f3fc',
+          300: '#67e8f9',
+          400: '#22d3ee',
+          500: '#06b6d4',
+          600: '#0891b2',
+          700: '#0e7490',
+          800: '#155e75',
+          900: '#164e63',
         }
       },
       backgroundImage: {
-        'luxury-radial': 'radial-gradient(circle at top, rgba(194,145,29,0.16), transparent 32%), radial-gradient(circle at 20% 20%, rgba(124,92,255,0.12), transparent 26%), linear-gradient(180deg, rgba(5,8,22,1), rgba(11,16,32,1))',
+        'luxury-radial': 'radial-gradient(circle at top, rgba(20,184,166,0.18), transparent 32%), radial-gradient(circle at 20% 20%, rgba(14,165,233,0.14), transparent 26%), linear-gradient(180deg, rgba(5,8,22,1), rgba(11,16,32,1))',
         'grid-fade': 'linear-gradient(to right, rgba(148,163,184,0.08) 1px, transparent 1px), linear-gradient(to bottom, rgba(148,163,184,0.08) 1px, transparent 1px)',
       },
       keyframes: {
